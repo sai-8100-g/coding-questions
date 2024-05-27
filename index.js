@@ -6,7 +6,7 @@ function daysAfterXDays(days) {
   const year = result.getFullYear()
   const month = result.getMonth()
   const date = result.getDate()
-  return `${date}-${month}-${year}`
+  return `${date}-${month + 1}-${year}`
 }
 
 module.exports = daysAfterXDays
