@@ -5,7 +5,7 @@ const {addDays} = require('date-fns')
 
 let daysAfter100Days = () => {
   const result = addDays(new Date(), 100)
-  return `${result.getDate()}/${result.getMonth()}/${result.getFullYear()}`
+  return `${result.getDate()}/${result.getMonth() + 1}/${result.getFullYear()}`
 }
 
 app.get('/', (request, response) => {
